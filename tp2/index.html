@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="page-header" >
+    <table border="1">
+        <thead>
+            <tr>
+                <th> Tipo</th>
+                <th> Valor </th>
+                <th>Compra</th>
+                <th>Venta</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <div class="converter-row" id="usuario">
+        <h2>Ingrese la cantidad que va a cambiar </h2>
+        <input type="text" id="input" placeholder="Ej: 1.500.000,50">
+        <select id="tipoDolar">
+            <option value="oficial">Oficial</option>
+            <option value="blue">Blue</option>
+            <option value="bolsa">Bolsa</option>
+            <option value="contadoconliquidacion">Contado con liquidacion</option>
+            <option value="mayorista">Mayorista</option>
+            <option value="cripto">Cripto</option>
+            <option value="tarjeta">Tarjeta</option>
+        </select>
+        <select id="modo">
+            <option value="pesosUSD">Pesos a USD</option>
+            <option value="usdPesos">USD a Pesos</option>
+        </select>
+        <button id="cambio">Cambiar</button>
+        <div id="results"></div>
+    </div>
+</div>    
+</body>
+<script src="./script.js"></script>
+</html>

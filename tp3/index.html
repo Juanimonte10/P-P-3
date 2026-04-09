@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Trivia</h1>
+        
+    </div>
+
+    <div id="app-container">
+
+        <select id="category">
+            <option value="" disabled selected>Seleccioná una categoría</option>
+            <option value="Historia">Historia</option>
+            <option value="Geografía">Geografía</option>
+            <option value="Ciencia">Ciencia</option>
+            <option value="Deportes">Deportes</option>
+            <option value="Tecnologia">Tecnología</option>
+            <option value="Matematica">Matemática</option>
+        </select>
+
+        <div class="info-bar">
+            <h2 id="input"></h2>
+            <div id="timer"></div>
+        </div>
+
+        <div id="pregunta-texto"></div>
+
+        <div id="opciones">
+            <button id="btn1" onclick="evaluarRespuesta(this.textContent)"></button>
+            <button id="btn2" onclick="evaluarRespuesta(this.textContent)"></button>
+            <button id="btn3" onclick="evaluarRespuesta(this.textContent)"></button>
+            <button id="btn4" onclick="evaluarRespuesta(this.textContent)"></button>
+        </div>
+
+        <button id="btn-reset" onclick="resetJuego()"> Jugar de nuevo</button>
+        <div id="cargar"></div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
