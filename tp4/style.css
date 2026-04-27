@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1a1a2e;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    color: #e0aaff;
+}
+
+#timer {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #c77dff;
+}
+
+#mensaje {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #80ffdb;
+    margin: 12px 0;
+    min-height: 32px;
+}
+
+#btnReiniciar {
+    margin-bottom: 20px;
+    padding: 10px 28px;
+    font-size: 1rem;
+    background-color: #7b2fbe;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#errores{
+    font-size: 1,2rem;
+    color: #ff4d4d;
+}
+
+#btnReiniciar:hover {
+    background-color: #9d4edd;
+}
+
+#table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 28px;
+    border: 2px solid #3d1a78;
+    cursor: pointer;
+    background-color: #240046;
+    border-radius: 6px;
+    transition: transform 0.4s, background-color 0.2s;
+    transform-style: preserve-3d;
+}
+
+td:hover {
+    background-color: #3c096c;
+}
+
+td.girada {
+    transform: rotateY(360deg);
+    background-color: #10002b;
+}
