@@ -109,4 +109,49 @@ ALTER TABLE alumnos
 ADD trayectoria_alumno VARCHAR (50)
 */
 
+/*27/04/2026*/
+/*
+punto 1
+CREATE TABLE usuarios (
+id_usuario INT AUTO_INCREMENT,
+nombre VARCHAR(50),
+correo VARCHAR(100),
+contraseña VARCHAR (100) NOT NULL,
 
+CONSTRAINT pk_usuario PRIMARY KEY (id_usuario)
+);
+*/
+
+/*
+punto 2
+INSERT INTO usuarios (id_usuario, nombre, correo, contraseña)
+VALUES 
+(1,'Nico','nicoporro@gmail.com','fafa2025'),
+(2,'Enzo','enzoRo@gmail.com','argentina2025');
+*/
+/*ALTER TABLE alumno_materia ADD condicion VARCHAR(30);*/
+
+/*eliminar columna*/
+/*ALTER TABLE alumnos DROP COLUMN trayectoria_alumno;*/
+/*
+
+
+/*
+CREATE TABLE alumno_materia ( 
+id_alumno_examen INT AUTO_INCREMENT,
+ id_alumno INT,
+  id_materia INT,
+   nota_examen DECIMAL(4,2),
+	 condicion VARCHAR(20), 
+	 CONSTRAINT pk_alumno_examen PRIMARY KEY (id_alumno_examen), 
+	 FOREIGN KEY (id_alumno) REFERENCES alumnos(id_alumno),
+	  FOREIGN KEY (id_materia) REFERENCES materias(id_materia) );
+*/
+/*
+INSERT INTO alumno_materia
+(id_alumno,id_materia,nota_examen,condicion)
+VALUES
+(1,1,8,'Promocionado'),
+(1,2,6,'Regular'),
+(2,1,3,'Libre');
+*/
